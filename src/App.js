@@ -22,13 +22,9 @@ function App() {
     }
   }
 
-  useEffect(() => {
-    console.log(counter)
-  }, [counter])
-
   return (
     <div className="App">
-      <div></div>
+      <div>{counter}</div>
       <form action="" onSubmit={newToDo}>
         <input type="text" id="newTodo" name="newTodo" value={todo} onChange={e => setTodo(e.target.value)} placeholder="Neues TODO" />
         <input type="submit" value="+" />
